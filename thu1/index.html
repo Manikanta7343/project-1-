@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link href="style.css"rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h1>Enter Text Convert to speak </h1>
+        <textarea placeholder="Enter text"></textarea>
+        <button><img src="one.png"/></button>
+    </div>
+    
+    <script>
+    var data=new SpeechSynthesisUtterance()
+    document.querySelector("button").addEventListener("click",()=>{
+        data.text=document.querySelector("textarea").value
+        window.speechSynthesis.speak(data)
+    })
+    
+    
+    </script>
+</body>
+</html>
+<script>
+var a=3
+var b=2
+document.write(a++)
+document.write(a++)
+
+
+//  document.write(++a)
+
+// document.write(a--)
+//  document.write(--a)
+
+
+
+
+</script>
